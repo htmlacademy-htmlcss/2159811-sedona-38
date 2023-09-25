@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Julia Luskan](https://up.htmlacademy.ru/htmlcss/38/user/2159811).
-* Наставник: Ирина Антипина.
+* Наставник: Ирина Антипина (https://htmlacademy.ru/profile/id2108789).
 
 ---
 
