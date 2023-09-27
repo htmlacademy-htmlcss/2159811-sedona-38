@@ -120,9 +120,13 @@
         <p class="explanation mail-explanation accent">
         Только полезная информация и никакого спама, честное бойскаутское!
         </p>
-
-        ФОРМА
-
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="subscribe-form-name">
+            <label class="visually-hidden" for="user-email">Ваш e-mail</label>
+            <input class="your-email" type="email" id="user-email" name="user-email" placeholder="Ваш e-mail" required>
+          </p>
+          <button class="subscribe-button wanted-button" type="submit">Подписаться</button>
+        </form>
 
       </section>
 
@@ -134,14 +138,22 @@
         <ul class="sotial_networks">
           <li class="networks-item">
             <a class="networks-link" href="https://vk.com/htmlacademy"></a>
+            <span class="visually-hidden">Vkontakte.</span>
           </li>
           <li class="networks-item">
             <a class="networks-link" href="https://t.me/htmlacademy "></a>
+            <span class="visually-hidden">Telegram.</span>
           </li>
           <li class="networks-item">
             <a class="networks-link" href="https://www.youtube.com/user/htmlacademyru"></a>
+            <span class="visually-hidden">Youtube.</span>
           </li>
         </ul>
+        <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <div class="logo-of-academy">
+          <a class="academy-link"  href="https://htmlacademy.ru/">
+          </a>
+        </div>
       </section>
     </footer>
   </body>
