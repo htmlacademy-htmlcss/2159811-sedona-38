@@ -119,3 +119,19 @@ body {
   font-size: 18px;
   line-height: 24px;
 }
+
+.all-options {
+  background-image: url(../images/hotels/hotels-background.jpg);
+}
+
+.inner-header-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+}
+
+.breadcrumbs-link {
+font-size: 16px;
+font-weight: 400;
+line-height: 21px;
+}

@@ -47,71 +47,102 @@
     </header>
 
     <main class="main-inner">
-      <header class="inner-header">
-        <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
-              <span class="visually-hidden">На главную</span>
-            </a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
-          </li>
-        </ul>
-      </header>
+      <div class="all-options accent">
+        <header class="inner-header">
+          <h1 class="inner-header-title">Гостиницы Седоны</h1>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">
+                <span class="visually-hidden">На главную</span>
+              </a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link">Гостиницы</a>
+            </li>
+          </ul>
+        </header>
 
-      <section class="hotels">
-        <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+        <section class="hotels">
+          <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
 
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="hotels-filter-group filter-inf">
-              <legend class="hotels-filter-title">Инфраструктура:</legend>
-              <label class="control">
-                <input class="control-input" type="checkbox" name="pool" checked>
-                Бассейн
-              </label>
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="hotels-filter-group filter-inf">
+                <legend class="hotels-filter-title">Инфраструктура:</legend>
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="pool" checked>
+                  Бассейн
+                </label>
 
-              <label class="control">
-                <input class="control-input" type="checkbox" name="parking" checked>
-                Парковка
-              </label><label class="control">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="parking" checked>
+                  Парковка
+                </label><label class="control">
 
-                <input class="control-input" type="checkbox" name="wifi">
-                Wi-Fi
-              </label>
-          </fieldset>
+                  <input class="control-input" type="checkbox" name="wifi">
+                  Wi-Fi
+                </label>
+            </fieldset>
 
-          <fieldset class="hotels-filter-group filter-liv">
-            <legend class="hotels-filter-title">Тип Жилья:</legend>
+            <fieldset class="hotels-filter-group filter-liv">
+              <legend class="hotels-filter-title">Тип Жилья:</legend>
 
-              <label class="control">
-                <input class="control-input" type="radio" name="types" value="hotel" checked>
-                Гостиница
-              </label>
+                <label class="control">
+                  <input class="control-input" type="radio" name="types" value="hotel" checked>
+                  Гостиница
+                </label>
 
-              <label class="control">
-                <input class="control-input" type="radio" name="types" value="motel">
-                Мотель
-              </label>
+                <label class="control">
+                  <input class="control-input" type="radio" name="types" value="motel">
+                  Мотель
+                </label>
 
-              <label class="control">
-                <input class="control-input" type="radio" name="types" value="apartments">
-                Апартаменты
-              </label>
-          </fieldset>
-          <fieldset class="hotels-filter-group filter-price">
-            <legend class="hotels-filter-title" >Стоимость, p:</legend>
-              <label class="field" for="price-form">от:</label>
-              <input class="field-price" placeholder="0" type="number" name="price-from" id="price-form">
-              <label class="field" for="price-to">до:</label>
-              <input class="field-price" placeholder="9000" type="number" name="price-to" id="price-to">
-          </fieldset>
-          <div class="chose">
-          <button class="button-agree" type="submit">Применить</button>
-          <button class="button-clear" type="reset">Очистить</button>
+                <label class="control">
+                  <input class="control-input" type="radio" name="types" value="apartments">
+                  Апартаменты
+                </label>
+            </fieldset>
+            <fieldset class="hotels-filter-group filter-price">
+              <legend class="hotels-filter-title" >Стоимость, p:</legend>
+                <label class="field" for="price-form">от:</label>
+                <input class="field-price" placeholder="0" type="number" name="price-from" id="price-form">
+                <label class="field" for="price-to">до:</label>
+                <input class="field-price" placeholder="9000" type="number" name="price-to" id="price-to">
+            </fieldset>
+            <div class="chose">
+            <button class="button-agree" type="submit">Применить</button>
+            <button class="button-clear" type="reset">Сбросить</button>
+            </div>
+          </form>
+        </section>
+      </div>
+
+      <section class="hotels-selection">
+        <div class="hotels-searching">
+          <h2 class="visually-hidden">Результаты поиска</h2>
+            <p class="select-result">Найдено гостиниц: 38</p>
+            <select class="select-control" aria-label="Сортировка">
+              <option value="cheap">Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="popular">Сначала популярные</option>
+            </select>
+            <ul class="viewer">
+              <li class="viewer-square">
+                <button class="button-small-sign" type="button">
+                  <span class="visually-hidden">Мелкие значки.</span>
+                </button>
+              </li>
+              <li class="viewer-square">
+                <button class="button-big-sign" type="button">
+                  <span class="visually-hidden">Крупные значки.</span>
+                </button>
+              </li>
+              <li class="viewer-square">
+                <button class="button-list" type="button">
+                  <span class="visually-hidden">Список.</span>
+                </button>
+              </li>
+            </ul>
           </div>
-        </form>
 
         <ul class="sedona-hotels">
           <li class="hotel-card">
@@ -191,20 +222,20 @@
       </section>
 
       <section class="invitation-of-sedona">
-        <h2 class="title invitation-title">
+        <h2 class="section-title invitation-title">
         Заинтересовались?
         </h2>
-        <p class="explanation invitation-explanation">
+        <p class="section-explanation invitation-explanation">
         Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <a class="hotels-button wanted-button" href="catalog.html">Поиск гостиницы в Седоне</a>
       </section>
 
-      <section class="mail-of-sedona">
-        <h2 class="title mail-title accent">
+      <section class="mail-of-sedona-no-picture">
+        <h2 class="section-title mail-title">
         Подпишитесь на рассылку
         </h2>
-        <p class="explanation mail-explanation accent">
+        <p class="section-explanation mail-explanation">
         Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
@@ -214,10 +245,7 @@
           </p>
           <button class="subscribe-button wanted-button" type="submit">Подписаться</button>
         </form>
-
       </section>
-
-
     </main>
 
     <footer>
