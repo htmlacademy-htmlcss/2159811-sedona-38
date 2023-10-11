@@ -14,6 +14,10 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -22,15 +26,42 @@ body {
   color: #000000;
   background-color: #f2f2f2;
   text-align: center;
+  margin: 0;
 }
 
-.main-container {
+.big-container {
   background-color: #ffffff;
   width: 1200px;
   margin: 0 auto;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  flex-grow: 1;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
+.navigation {
+  display: flex;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 620px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation-users {
+  display: flex;
+  max-width: 270px;
+  margin-left: auto;
+  padding: 0;
+  list-style-type: none;
+}
 
 .navigation-link {
   font-size: 20px;
@@ -67,20 +98,118 @@ body {
   background-size: 100% auto;
 }
 
-.small-area, .few-tourists {
-  background-color: rgba(131, 179, 211, 0.12);
+.advantages-title {
+  padding-top: 69px;
 }
 
-.real-town, .devil-bridge {
+.advantages-explanation {
+  padding-top: 25px;
+  padding-bottom: 69px;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.advantages-items-town {
+  display: flex;
+}
+
+.real-town {
+  display: flex;
+  flex-direction: column;
   background-color: #82b3d3;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  gap: 30px;
+}
+
+.area-road-tourists {
+  display: flex;
+}
+
+.small-area {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(131, 179, 211, 0.12);
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 385px;
+  gap: 30px;
 }
 
 .nice-road {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(131, 179, 211, 0.2);
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 385px;
+  gap: 30px;
 }
 
-.accomodation, .souvenirs {
+.few-tourists {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(131, 179, 211, 0.12);
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 385px;
+  gap: 30px;
+}
+
+.advantages-items-bridge {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.devil-bridge {
+  display: flex;
+  flex-direction: column;
+  background-color: #82b3d3;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  gap: 30px;
+}
+
+.conditions-list {
+  display: grid;
+  grid-template-columns: repeat (3, 400px);
+  grid-template-areas: "accomodation food souvenirs";
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.accomodation {
+  display: flex;
+  flex-direction: column;
+  padding: 103px 85px;
+  background-color: rgba(131, 179, 211, 0.12);
+  grid-area: accomodation;
+}
+
+.food {
+  display: flex;
+  flex-direction: column;
+  padding: 103px 85px;
+  background-color: #ffffff;
+  grid-area: food;
+}
+
+.souvenirs {
+  display: flex;
+  flex-direction: column;
+  padding: 103px 85px;
+  background-color: rgba(131, 179, 211, 0.12);
+  grid-area: souvenirs;
 }
 
 .section-title {
